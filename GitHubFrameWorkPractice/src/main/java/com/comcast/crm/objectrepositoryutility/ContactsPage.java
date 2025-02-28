@@ -10,6 +10,8 @@ public class ContactsPage {
 	private WebElement createNewContactButton;
 	@FindBy(xpath = "//img[contains(@title,'Create Contact...')]")
 	private WebElement createNewContactButtons32;
+	@FindBy(xpath = "//img[contains(@title,'Create Contact...')]")
+	private WebElement createNewContactButtons31;
 	
 	
 	// 2. initialization
