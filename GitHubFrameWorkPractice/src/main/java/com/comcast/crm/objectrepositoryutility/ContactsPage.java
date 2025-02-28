@@ -8,6 +8,8 @@ import org.openqa.selenium.support.PageFactory;
 public class ContactsPage {
 	@FindBy(xpath = "//img[contains(@title,'Create Contact...')]")
 	private WebElement createNewContactButton;
+	@FindBy(xpath = "//img[contains(@title,'Create Contact...')]")
+	private WebElement createNewContactButtons;
 	
 	// 2. initialization
 	
