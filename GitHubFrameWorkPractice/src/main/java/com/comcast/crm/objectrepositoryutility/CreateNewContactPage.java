@@ -9,11 +9,11 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.comcast.crm.generic.webdriverutility.WebDriverUtility;
+
 
 public class CreateNewContactPage {
 	WebDriver driver;
-	WebDriverUtility wLib = new WebDriverUtility();
+
 	
 	
 	// 1. declaration
@@ -57,14 +57,14 @@ public class CreateNewContactPage {
 	public void createContactToChild(String lastname, String orgName) {
 		lastNameTextField.sendKeys(lastname);
 		contNameLookupIcon.click();
-		wLib.switchToWindowOnURL(driver, "module=Accounts");
+		
 		searchTextField.sendKeys(orgName);
 		searchButton.click();
 		driver.findElement(By.xpath("//a[text()='" + orgName + "']")).click();
 	}
 	
 	public void createContactToParent(String lastname, String orgName) {
-		wLib.switchToWindowOnURL(driver, "module=Contacts");
+		
 		saveButton.click();
 	}
 
